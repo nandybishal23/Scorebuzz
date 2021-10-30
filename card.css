@@ -1,0 +1,34 @@
+.small-container{
+    max-width: 2080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: -20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-4{
+    flex-basis: 10%;
+    padding: 10px;
+    min-width: 400px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+.col-4 h4{
+    font-size: 2em;
+}
+.color{
+    margin-top: -10%;
+}
+.col-4 img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 50%;
+}

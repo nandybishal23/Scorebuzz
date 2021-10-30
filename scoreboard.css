@@ -1,0 +1,474 @@
+.text-danger {
+  color: #FF3D3D;
+}
+
+.label {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #6E6E6E;
+  font-weight: 700;
+  letter-spacing: 0.095em;
+  margin-bottom: 4px;
+}
+
+.mb-05 {
+  margin-bottom: 4px;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.ml-1 {
+  margin-left: 8px;
+}
+
+.ml-2 {
+  margin-left: 16px;
+}
+
+.ml-3 {
+  margin-left: 24px;
+}
+
+.ml-4 {
+  margin-left: 32px;
+}
+
+.ml-5 {
+  margin-left: 40px;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+
+.mr-2 {
+  margin-right: 16px;
+}
+
+.mr-3 {
+  margin-right: 24px;
+}
+
+.mr-4 {
+  margin-right: 32px;
+}
+
+.mr-5 {
+  margin-right: 40px;
+}
+
+.scoreboard {
+  background: #0F0F0F;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.scoreboard__container {
+  padding: 16px;
+}
+
+.scoreboard__result {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scoreboard .scoreboard__result-home,
+.scoreboard .scoreboard__result-away,
+.scoreboard .scoreboard__result-separator {
+  font-size: 26px;
+}
+
+.scoreboard .scoreboard__result-separator {
+  margin: 0 8px;
+  color: #6E6E6E;
+}
+
+.scoreboard__badge {
+  width: 38px;
+  height: 38px;
+}
+
+.scoreboard__badge img {
+  height: 100%;
+}
+
+.scoreboard__teams {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scoreboard__team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.scoreboard__team--align-right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.scoreboard__team--align-right .scoreboard__name {
+  text-align: right;
+}
+
+.scoreboard__team--align-left .scoreboard__name {
+  text-align: left;
+}
+
+.scoreboard__name {
+  display: block;
+  width: 100px;
+}
+
+.scoreboard__nav {
+  border-top: 1px solid #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 16px;
+  margin: 0;
+}
+
+.scoreboard__nav-el {
+  list-style: none;
+}
+
+.scoreboard__nav-el.is-active a {
+  color: #29BDDE;
+  position: relative;
+}
+
+.scoreboard__nav-el.is-active a:after {
+  display: block;
+  height: 2px;
+  width: 100%;
+  content: "";
+  background: #29BDDE;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.scoreboard__nav-el a {
+  padding: 20px 16px;
+  color: #6E6E6E;
+  text-decoration: none;
+  display: block;
+  line-height: 0;
+}
+
+.scoreboard__basics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-bottom: 14px;
+  margin: 0 28px;
+}
+
+.player--home .player__number {
+  background: #BE2C2C;
+}
+
+.player--away .player__number {
+  background: #31A49B;
+}
+
+.player__number {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-bottom: 2.66667px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.player__name {
+  font-size: 10px;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+  bottom: 0;
+}
+
+.formation {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formation--home .player__number {
+  background: #BE2C2C;
+}
+
+.formation--away {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.formation--away .player__number {
+  background: #31A49B;
+}
+
+.formation__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 24px;
+  margin-bottom: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-bottom: 14px;
+  margin: 0 28px;
+}
+
+.player__number {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-bottom: 2.66667px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.player__name {
+  font-size: 10px;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+  bottom: 0;
+}
+
+.field {
+  border-radius: 4px;
+  background: #29502C;
+  padding: 8px;
+}
+
+.field__center-line {
+  width: 100%;
+  height: 2px;
+  background: #507450;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.field__center-line:after {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #507450;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.field__center-line:before {
+  width: 8px;
+  height: 8px;
+  background: #507450;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.field__container {
+  border-radius: 2px;
+  border: 2px solid #507450;
+  position: relative;
+}
+
+.field__half {
+  position: relative;
+  height: 290px;
+  overflow: hidden;
+}
+
+.field__half--reverse {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.field .penalty-box {
+  border: 2px solid #507450;
+  width: 35%;
+  height: 50px;
+  position: absolute;
+  top: -2px;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+
+.field .penalty-box__container {
+  position: relative;
+  height: 100%;
+  background: #29502C;
+  z-index: 1;
+}
+
+.field .penalty-box:after {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid #507450;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  display: block;
+}
+
+.field .penalty-box__infield {
+  border: 2px solid #507450;
+  width: 35%;
+  height: 38%;
+  position: absolute;
+  top: -2px;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+
+.field__corner {
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: -10px;
+  border: 2px solid #507450;
+}
+
+.field__corner--left {
+  left: -10px;
+}
+
+.field__corner--right {
+  right: -10px;
+}
+/*# sourceMappingURL=scoreboard.css.map */

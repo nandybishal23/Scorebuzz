@@ -1,0 +1,375 @@
+$gray300: #D2D2D2;
+$gray500: #6E6E6E;
+$gray700: #212121;
+$gray900: #0F0F0F;
+$blue: #29BDDE;
+$lightBlue: #31A49B;
+$red: #FF3D3D;
+$border-radius: 4px;
+$lightGreen: #507450;
+$green: #29502C;
+$darkRed: #BE2C2C;
+$space-size: 8px;
+$space-size-2: $space-size * 2;
+$space-size-3: $space-size * 3;
+$space-size-4: $space-size * 4;
+$space-size-5: $space-size * 5;
+$space-size-6: $space-size * 6;
+
+
+$white: $gray300;
+$secondaryTextColor: $gray500;
+$black: $gray900;
+$bodyBg: $gray700;
+$borderColor: $gray700;
+$primaryColor: $blue;
+.text-danger{
+    color: $red;
+}
+.label{
+    font-size: 9px;
+    text-transform: uppercase;
+    color: $secondaryTextColor;
+    font-weight: 700;
+    letter-spacing: 0.095em;
+    margin-bottom: $space-size / 2;
+}
+.mb-05{
+    margin-bottom: $space-size / 2;
+}
+.mb-0{
+    margin-bottom: 0 !important;
+}
+.mb-1{
+    margin-bottom: $space-size;
+}
+.mt-1{
+    margin-top: $space-size;
+}
+.mt-2{
+    margin-top: $space-size-2;
+}
+.ml-1{
+    margin-left: $space-size;
+}
+.ml-2{
+    margin-left: $space-size-2;
+}
+.ml-3{
+    margin-left: $space-size-3;
+}
+.ml-4{
+    margin-left: $space-size-4;
+}
+.ml-5{
+    margin-left: $space-size-5;
+}
+
+.mr-1{
+    margin-right: $space-size;
+}
+.mr-2{
+    margin-right: $space-size-2;
+}
+.mr-3{
+    margin-right: $space-size-3;
+}
+.mr-4{
+    margin-right: $space-size-4;
+}
+.mr-5{
+    margin-right: $space-size-5;
+}
+
+.scoreboard {
+  background: $black;
+  margin-bottom: $space-size;
+  border-radius: $border-radius;
+  &__container {
+    padding: $space-size-2;
+  }
+  &__result {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .scoreboard__result-home,
+  .scoreboard__result-away,
+  .scoreboard__result-separator {
+    font-size: 26px;
+  }
+  .scoreboard__result-separator {
+    margin: 0 $space-size;
+    color: $secondaryTextColor;
+  }
+  &__badge {
+    width: 38px;
+    height: 38px;
+    img {
+      height: 100%;
+    }
+  }
+  &__teams {
+    display: flex;
+    justify-content: center;
+  }
+  &__team {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    &--align-right {
+      flex-direction: row-reverse;
+      .scoreboard__name {
+        text-align: right;
+      }
+    }
+    &--align-left {
+      .scoreboard__name {
+        text-align: left;
+      }
+    }
+  }
+  &__name {
+    display: block;
+    width: 100px;
+  }
+
+  &__nav {
+    border-top: 1px solid $borderColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 $space-size-2;
+    margin: 0;
+  }
+  &__nav-el {
+    list-style: none;
+    &.is-active {
+      a {
+        color: $primaryColor;
+        position: relative;
+        &:after {
+          display: block;
+          height: 2px;
+          width: 100%;
+          content: "";
+          background: $primaryColor;
+          border-top-left-radius: $border-radius / 2;
+          border-top-right-radius: $border-radius / 2;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+    a {
+      padding: $space-size-2 + $space-size / 2 $space-size-2;
+      color: $secondaryTextColor;
+      text-decoration: none;
+      display: block;
+      line-height: 0;
+    }
+  }
+  &__basics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: $space-size-2 - 2px;
+  margin: 0 $space-size-3 + $space-size / 2;
+  &--home {
+    .player__number {
+      background: $darkRed;
+    }
+  }
+  &--away {
+    .player__number {
+      background: $lightBlue;
+    }
+  }
+  &__number {
+    width: $space-size-4;
+    height: $space-size-4;
+    border-radius: 100%;
+    margin-bottom: $space-size / 3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  &__name {
+    font-size: 10px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    white-space: nowrap;
+    bottom: 0;
+  }
+}
+.formation {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   &--home {
+    .player__number {
+      background: $darkRed;
+    }
+  }
+  &--away {
+    .player__number {
+      background: $lightBlue;
+    }
+    transform: rotate(180deg);
+  }
+  &__line {
+    display: flex;
+    padding: 0 $space-size-3;
+    margin-bottom: $space-size;
+    justify-content: center;
+  }
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: $space-size-2 - 2px;
+  margin: 0 $space-size-3 + $space-size / 2;
+  &__number {
+    width: $space-size-4;
+    height: $space-size-4;
+    border-radius: 100%;
+    margin-bottom: $space-size / 3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  &__name {
+    font-size: 10px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    white-space: nowrap;
+    bottom: 0;
+  }
+}
+.field {
+  border-radius: $border-radius;
+  background: $green;
+  padding: $space-size;
+  &__center-line {
+    width: 100%;
+    height: 2px;
+    background: $lightGreen;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    &:after {
+      width: 60px;
+      height: 60px;
+      border: 2px solid $lightGreen;
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 100%;
+    }
+    &:before {
+      width: $space-size;
+      height: $space-size;
+      background: $lightGreen;
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 100%;
+    }
+  }
+  &__container {
+    border-radius: $border-radius / 2;
+    border: 2px solid $lightGreen;
+    position: relative;
+  }
+  &__half {
+    position: relative;
+    height: 290px;
+    overflow: hidden;
+    &--reverse {
+      transform: rotate(180deg);
+    }
+  }
+  .penalty-box {
+    border: 2px solid $lightGreen;
+    width: 35%;
+    height: 50px;
+    position: absolute;
+    top: -2px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    &__container {
+      position: relative;
+      height: 100%;
+      background: $green;
+      z-index: 1;
+    }
+    &:after {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: 2px solid $lightGreen;
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      content: "";
+      display: block;
+    }
+    &__infield {
+      border: 2px solid $lightGreen;
+      width: 35%;
+      height: 38%;
+      position: absolute;
+      top: -2px;
+      margin: auto;
+      right: 0;
+      left: 0;
+    }
+  }
+  &__corner {
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -10px;
+    border: 2px solid $lightGreen;
+    &--left {
+      left: -10px;
+    }
+    &--right {
+      right: -10px;
+    }
+  }
+}

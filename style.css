@@ -1,0 +1,90 @@
+:root {
+    --main-color: #ff4545;
+    --body-bg: #181616;
+    --box-bg: #221f1f;
+    --text-color: #ffffff;
+    --white: #fff;
+    --black: #222;
+    --grey1: #3a3b3c;
+    --grey2: #828282;
+    --nav-height: 60px;
+    --space-top: 30px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "poppins";
+    font-weight: 400;
+    color: var(--text-color);
+    padding-top: var(--nav-height);
+    background-color: #000;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.container {
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 0 40px;
+    
+}
+
+.overlay {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.nav-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #181616;
+    
+}
+
+.nav {
+    /* display: contents; */
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    height: var(--nav-height);
+
+}
+
+.nav a {
+    
+    color: var(--text-color);
+   
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 5px;
+}
