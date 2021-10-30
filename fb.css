@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0;
+    background-color: #060807;
+    background-image: url(./bg2.jpeg);
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.row{
+    display: flex;
+}
+
+.logo{
+    color: red;
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+}
+.header .icons a,
+.header .icons div{
+    font-size: 1rem;
+    color:#fff;
+    /* margin-left: 80rem; */
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+ .header .search-form{
+    position: absolute;
+    right: 3%;
+    background-color: transparent;
+    width:20rem;
+    height:5rem;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+
+
+}
+
+.header .search-form.active{
+    /* right:2rem; */
+    opacity: 1;
+    transition: .4s linear;
+    background-color: transparent;
+    /* width:50%; */
+}
+
+.header .search-form input{
+    width:80%;
+    font-size: 1rem;
+    color:red;
+    text-transform: none;
+}
+.header .search-form input .active{
+    width:80%;
+    font-size: 1rem;
+    color:red;
+    text-transform: none;
+    background-color: transparent;
+}
+
+.header .search-form label{
+    font-size: 1rem;
+    padding-right: 1rem;
+    color: red;
+    cursor: pointer;
+}
+
+/* .header .search-form label:hover{
+    color:var(--main-color);
+}  */
+
+ .header.active{
+    /* padding: 0.5rem 4%; */
+    background: #222;
+}
+.football{
+    margin: 10px;
+    background-color: white;
+    width: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.football img{
+    width: 100%;
+}
+
+.football-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+}
+.football-info h3{
+    margin: 0;
+}
+.football .disp
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+
+ .popup-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: scroll;
+} 
+
+ .popup-container.hidden{
+    opacity: 0;
+    pointer-events: none;
+} 
+
+.popup{
+    background-color: seashell;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 2rem;
+    position: relative;
+
+}
+.video-info h1{
+    padding: 1rem;
+    margin: 0;
+    margin-top: 10rem;
+    /* margin-bottom: 10rem; */
+    text-align: center;
+
+}
+.video-info p{
+text-align: center;
+margin: 0;
+font-size: 1.5rem;
+padding: 0;
+}
+
+.popup .close-popup{
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* .footer{
+    bottom: 10px;
+    position: absolute;
+    background-color: black;
+    color: red;
+} */
+.empty{
+    max-width: 70%;
+    background-color: rgb(255, 8, 8);
+}
+
+@media (max-width:600px){
+
+}
