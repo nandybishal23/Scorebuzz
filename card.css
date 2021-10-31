@@ -12,12 +12,11 @@
     justify-content: space-around;
 }
 .col-4{
-    flex-basis: 10%;
-    padding: -20px;
-    min-width: 200px;
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 150px;
     margin-bottom: 50px;
-    transition: transform 0.5s;
-    padding-bottom: 15px;
+    transition: transform 0.5s;  
     cursor: pointer;
 }
 .col-4 h4{
@@ -27,8 +26,18 @@
     margin-top: -5%;
 }
 .col-4 img{
-   max-width: 250px;
-   max-height: 150px;
+    max-width: 250px;
+    max-height: 150px;
     align-items: center;
     
+}
+@media only screen and (max-width: 900px){
+    .row{
+        text-align: center;
+        margin-bottom: 60px;
+
+    }
+    .col-4{
+        flex-basis: 100%;
+    }
 }
